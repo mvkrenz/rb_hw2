@@ -1,0 +1,15 @@
+one:
+  follower: marina
+  followed: lana
+
+two:
+  follower: marina
+  followed: michael
+
+three:
+  follower: lana
+  followed: marina
+
+four:
+  follower: archer
+  followed: marina
