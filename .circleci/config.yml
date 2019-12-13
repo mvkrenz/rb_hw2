@@ -43,7 +43,6 @@ jobs:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
-   	  
 #      -  run: bundle exec rspec --color --require spec_helper spec --format progress
       - run: bundle exec rake assets:precompile --trace 
 
