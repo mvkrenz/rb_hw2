@@ -33,8 +33,8 @@ production:
   database: <%= ENV['RDS_DB'] %>
   username: <%= ENV['RDS_USER'] %>
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
-  host: : <%= ENV['RDS_HOSTNAME'] %>
-  port: : <%= ENV['RDS_PORT'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
 
 #development:
 #  adapter: postgresql
