@@ -53,7 +53,7 @@ jobs:
       - run: bundle exec rake db:schema:load
       - run: yarn install --check-files
       - run: bundle exec rake assets:precompile --trace
-      - run: rails webpacker:install
+     # - run: rails webpacker:install
       # run tests!
     
     #  - run:
