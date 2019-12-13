@@ -9,7 +9,7 @@ global:
   application_name: rails_test
   branch: null
   default_ec2_keyname: aws-eb2
-  default_platform: Ruby 2.6 (Passenger Standalone)
+  default_platform: Ruby 2.6 (Puma)
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null

@@ -36,6 +36,7 @@ production:
   host: <%= ENV['RDS_HOSTNAME'] %>
   port: <%= ENV['RDS_PORT'] %>
 
+
 #development:
 #  adapter: postgresql
 #  encoding: unicode
