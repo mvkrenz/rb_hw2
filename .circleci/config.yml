@@ -50,14 +50,14 @@ jobs:
    #   - run: rails webpacker:install
       # run tests!
     
-      - run:
-          name: run tests
-          command: |
-            mkdir -p /tmp/test-results
-            bundle exec rspec --profile 10 \
-                        --out test_results/rspec.xml \
-                        --format progress \
-                        $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
+    #  - run:
+    #      name: run tests
+    #      command: |
+     #       mkdir -p /tmp/test-results
+     #       bundle exec rspec --profile 10 \
+     #                   --out test_results/rspec.xml \
+     #                   --format progress \
+     #                   $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
                         
       # collect reports
       - store_test_results:
