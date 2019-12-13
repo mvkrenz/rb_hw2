@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'mvkrenz@ren-isac.net'
+  default from: 'mvkrenz@iu.edu'
   layout 'mailer'
 end
