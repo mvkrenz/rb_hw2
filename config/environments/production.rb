@@ -71,7 +71,7 @@ Rails.application.configure do
   config.i18n.fallbacks = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'rails-test-env.us-east-2.elasticbeanstalk.com'
+  host = 'rails-test-dev.us-east-2.elasticbeanstalk.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'mail-relay.iu.edu',
