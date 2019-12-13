@@ -44,7 +44,6 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 #      -  run: bundle exec rspec --color --require spec_helper spec --format progress
-      - run: bundle exec rake assets:precompile --trace 
 
       # Database setup
 
@@ -53,8 +52,8 @@ jobs:
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
       - run: yarn install --check-files
-
-   #   - run: rails webpacker:install
+      - run: bundle exec rake assets:precompile --trace
+      - run: rails webpacker:install
       # run tests!
     
     #  - run:
@@ -80,13 +79,6 @@ jobs:
     steps:
       - checkout
      
-     # - run: sudo apt-get install yarn
-     # - run: gem install bundler
-     # - run: bundle update
-     # - run: gem install rspec_junit_formatter
-     # - run: gem install rails -v 6.0.1
-      - run: yarn install --check-files
-      
       # Download and cache dependencies
       - restore_cache:
           keys:
