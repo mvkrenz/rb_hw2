@@ -24,7 +24,6 @@ jobs:
       - run: sudo apt-get install yarn
       - run: gem install bundler
       - run: bundle install
-      - run: yarn install --check-files
       - run: gem install rspec_junit_formatter
       - run: gem install rails -v 6.0.1
       
@@ -48,6 +47,7 @@ jobs:
       # Database setup
 
       - run: bundle update
+      - run: yarn install --check-files
       - run: bundle exec rails db:migrate
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
